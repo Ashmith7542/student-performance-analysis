@@ -43,6 +43,18 @@ Intermediate education (Class 11 & 12 / Pre-University) is a pivotal juncture wh
 
 ---
 
+## 📊 Demo Data & Seed Files
+
+To facilitate testing and evaluation, a dedicated **`demo data`** folder is included in the project repository with realistic intermediate college sample data:
+
+| File Name | Description | Stream / Scope |
+| :--- | :--- | :--- |
+| `demo data/MOCK_DATA.csv` | 300+ Student records including names, emails, roll numbers, age, phone numbers, and addresses. | Class 11 & 12 (**MPC** and **BiPC** streams) |
+| `demo data/MOCK_DATA Teachers.csv` | Faculty member profiles with department assignments, subjects, contact info, and sections. | Mathematics, Physics, Chemistry, Biology, English |
+| `demo data/teachers timetable.csv` | Weekly timetable grid mapping daily lecture periods to classes, labs, and practice sessions. | Intermediate Class A & B schedules |
+
+---
+
 ## 🛠️ Technology Stack
 
 ### **Frontend**
@@ -64,6 +76,11 @@ Intermediate education (Class 11 & 12 / Pre-University) is a pivotal juncture wh
 
 ```
 myproject/
+├── demo data/                  # Sample CSV Datasets for Testing
+│   ├── MOCK_DATA.csv          # Student mock dataset (Class 11 & 12, MPC/BiPC)
+│   ├── MOCK_DATA Teachers.csv # Faculty mock dataset
+│   └── teachers timetable.csv # Lecture timetable mock matrix
+│
 ├── client/                     # React 19 Frontend Application
 │   ├── src/
 │   │   ├── components/        # Layouts, Navigation, Dialogs, AI Chatbot, UI Components

@@ -16,6 +16,6 @@ if _raw.startswith("mongodb+srv://"):
         _raw += "?retryWrites=true&w=majority"
 
 class Config:
-    MONGO_URI = _raw or "mongodb+srv://squash257_db_user:squash@squash.soemiyg.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_URI = _raw or os.getenv("MONGO_URI", "mongodb://localhost:27017/squash_db")
     JWT_SECRET = os.getenv("JWT_SECRET", "defaultsecret")
     PORT = int(os.getenv("PORT", 5000))
